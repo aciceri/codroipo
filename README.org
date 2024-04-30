@@ -1,0 +1,33 @@
+* Codroipo
+
+~codroipo~ is my personalized [[https://github.com/beekeeb/Allium58][Allium58]].
+Basically I simply removed the OLED display and everything related to wired build, sligthly moved some components and added some cosmetics.
+
+** Build the firmware
+
+#+BEGIN_SRC sh
+nix build github:aciceri/codroipo#firmware
+#+END_SRC
+
+** Flash the firmware
+
+#+BEGIN_SRC sh
+nix run github:aciceri/codroipo#flash
+#+END_SRC
+
+** Pictures
+
+[[./pics/1.jpg]]
+[[./pics/2.jpg]]
+[[./pics/3.jpg]]
+[[./pics/4.jpg]]
+[[./pics/5.jpg]]
+[[./pics/6.jpg]]
+[[./pics/7.jpg]]
+
+** Aknowledgements
+
+- [[https://github.com/beekeeb][beekeeb]] for the original [[https://github.com/beekeeb/Allium58][Allium58]]
+- [[https://github.com/kata0510][kata0510]] for the original [[https://github.com/kata0510/Lily58][Lily58]] design which the Allium58 is based on
+- [[https://github.com/lilyinstarlight][lilyinstarlight]] for [[https://github.com/lilyinstarlight/zmk-nix][zmk-nix]] which allows building [[https://zmk.dev/l][ZMK]] firmware with Nix
+- [[https://www.fiverr.com/jorgetukuy][jorgetukuy]] for changing the original Allium58 case according to my specifications
