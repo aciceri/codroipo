@@ -1,0 +1,6 @@
+/.west
+/modules
+/zephyr
+/zmk
+/build
+/result
