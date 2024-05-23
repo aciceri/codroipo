@@ -22,13 +22,6 @@
         _module.args.zmk-nix = inputs'.zmk-nix;
 
         packages = {
-          reset = zmk-nix.legacyPackages.buildKeyboard {
-            board = "nice_nano_v2";
-            shield = "reset";
-            zephyrDepsHash = "sha256-n7xX/d8RLqDyPOX4AEo5hl/3tQtY6mZ6s8emYYtOYOg=";
-            src = lib.sourceFilesBySuffices inputs.self [".conf" ".keymap" ".yml"];
-          };
-
           firmware = zmk-nix.legacyPackages.buildSplitKeyboard {
             name = "codroipo-firmware";
 
